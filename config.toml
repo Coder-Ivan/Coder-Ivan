@@ -1,8 +1,8 @@
 baseurl = "http://www.example.com"
 title = "陌浅的博客"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+languagecode = "zh-cn"
+defaultcontentlanguage = "zh-cn"
 
 paginate = 20
 
@@ -13,11 +13,10 @@ style = "github-dark"
 
 [params]
   author = "陌浅"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
+  info = "iOS开发工程师、Mac开发工程师"
+  description = "陌浅的个人博客"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.png"
-  #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
@@ -45,12 +44,12 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/johndoe/"
+  url = "https://github.com/Coder-Ivan/"
 [[params.social]]
   name = "Gitlab"
   icon = "fa fa-gitlab fa-2x"
   weight = 2
-  url = "https://gitlab.com/johndoe/"
+  url = "https://github.com/Coder-Ivan/"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
