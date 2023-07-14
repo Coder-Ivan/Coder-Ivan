@@ -1,15 +1,16 @@
-baseurl = "http://www.example.com"
+baseurl = "https://blog.lifan.run"
 title = "陌浅的博客"
 theme = "hugo-coder"
-languagecode = "zh-cn"
-defaultcontentlanguage = "zh-cn"
+languagecode = "en"
+defaultcontentlanguage = "en"
 
 paginate = 20
+enableEmoji = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "陌浅"
 
 [markup.highlight]
-style = "github-dark"
+style = "monokai"
 
 [params]
   author = "陌浅"
@@ -22,7 +23,7 @@ style = "github-dark"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2020
 
   enableTwemoji = true
 
@@ -61,6 +62,10 @@ style = "github-dark"
   name = "Blog"
   weight = 1
   url  = "posts/"
+[[menu.main]]
+  name = "Projects"
+  weight = 1
+  url  = "projects/"
 [[menu.main]]
   name = "About"
   weight = 2
