@@ -1,8 +1,8 @@
 baseurl = "https://blog.lifan.run"
 title = "陌浅的博客"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+languagecode = "zh-cn"
+defaultcontentlanguage = "zh-cn"
 
 paginate = 20
 enableEmoji = true
@@ -47,26 +47,21 @@ style = "monokai"
   weight = 1
   url = "https://github.com/Coder-Ivan/"
 [[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
-  weight = 2
-  url = "https://github.com/Coder-Ivan/"
-[[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  icon = "fa fa-weibo fa-2x"
   weight = 3
-  url = "https://twitter.com/johndoe/"
+  url = "https://weibo.com/u/5729139436"
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
+  name = "文章"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "Projects"
-  weight = 1
-  url  = "projects/"
-[[menu.main]]
-  name = "About"
+  name = "分类"
   weight = 2
+  url  = "categories/"
+[[menu.main]]
+  name = "关于我"
+  weight = 3
   url = "about/"
