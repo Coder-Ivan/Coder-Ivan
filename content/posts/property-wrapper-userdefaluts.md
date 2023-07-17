@@ -1,8 +1,6 @@
 +++
-authors = ["陌浅"]
 title = "Property Wrapper优化UserDefaults的使用"
 date = "2023-03-11"
-description = "简化Userdefaults使用上的不方便之处。"
 tags = [
     "swift",
     "iOS",
