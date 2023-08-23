@@ -183,7 +183,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "路漫漫其修远兮,吾将上下而求索."
+      subtitle = "路漫漫其修远兮,吾将上下而求索.志之所趋，无远弗届."
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
