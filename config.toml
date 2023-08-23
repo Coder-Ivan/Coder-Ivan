@@ -165,7 +165,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt 新增 | 0.2.4 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = "/posts/"
+      index = "index"
       appID = "7XNGIEBMFW"
       searchKey = "0dc9478a52c54ac60601374f3e0d4ac9"
 
@@ -501,4 +501,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = false
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+[params.algolia]
+  appId = "7XNGIEBMFW"
+  indexName = "index"
+  searchOnlyKey = "0dc9478a52c54ac60601374f3e0d4ac9"
