@@ -183,7 +183,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "路漫漫其修远兮,吾将上下而求索.志之所趋，无远弗届."
+      subtitle = "路漫漫其修远兮,吾将上下而求索. 志之所趋，无远弗届!"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -365,13 +365,24 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Mix = false
     # LoveIt 更改 | 0.2.0 评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus 评论系统设置
-      [params.page.comment.disqus]
-        # LoveIt 新增 | 0.1.1
-        enable = false
-        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-        shortname = ""
+      [params.page.comment.giscus]
+        # 你可以参考官方文档来使用下列配置
+        enable = true
+        repo = "Coder-Ivan/Giscus"
+        repoId = "R_kgDOKKckSQ"
+        category = "Announcements"
+        categoryId = "DIC_kwDOKKckSc4CYzMu"
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        lazyLoading = false
+        lightTheme = "light"
+        darkTheme = "dark_dimmed"
+
       # Gitalk 评论系统设置
       [params.page.comment.gitalk]
         # LoveIt 新增 | 0.1.1
