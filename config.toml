@@ -1,5 +1,5 @@
 baseurl = "https://blog.lifan.run"
-title = "陌浅的博客"
+title = "织雨青涯的博客"
 theme = "LoveIt"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
@@ -10,9 +10,11 @@ hasCJKLanguage = true
 # 默认每页列表显示的文章数目
 paginate = 12
 # 谷歌分析代号 [UA-XXXXXXXX-X]
-googleAnalytics = ""
+googleAnalytics = "G-VQMVSVXWT2"
 # 版权描述，仅仅用于 SEO
 copyright = ""
+# 网站关键词
+keywords = "织雨青涯,iOS,Swift,Hugo,Flutter,Rust,Mac"
 
 # 是否使用 robots.txt
 enableRobotsTXT = true
@@ -23,7 +25,7 @@ enableEmoji = true
 
 # 作者配置
 [author]
-  name = "Ivan"
+  name = "织雨青涯"
   email = "lifanafil@163.com"
   link = ""
 
@@ -56,6 +58,14 @@ enableEmoji = true
     name = "标签"
     url = "/tags/"
     title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "关于"
+    url = "about"
+    title = ""
 
 # 忽略一些构建错误
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
@@ -71,9 +81,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # LoveIt 新增 | 0.2.0 日期格式
   dateFormat = "2006-01-02"
   # 网站标题, 用于 Open Graph 和 Twitter Cards
-  title = "陌浅的博客"
+  title = "织雨青涯的博客"
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-  description = "陌浅的技术博客"
+  description = "织雨青涯的IT技术博客,包含本人的编程心得和学习体会."
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = ["/logo.png"]
 
@@ -88,7 +98,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # LOGO 的 URL
       logo = ""
       # 标题名称
-      name = "陌浅的博客"
+      name = "织雨青涯的博客"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
@@ -110,7 +120,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 网站创立年份
     since = 2019
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
-    icp = ""
+    icp = "京ICP备20007211号"
     # 许可协议信息 (支持 HTML 格式)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
@@ -168,6 +178,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       index = "myblog"
       appID = "7XNGIEBMFW"
       searchKey = "0dc9478a52c54ac60601374f3e0d4ac9"
+
+  [params.algolia]
+    appId = "7XNGIEBMFW"
+    indexName = "myblog"
+    searchOnlyKey = "0dc9478a52c54ac60601374f3e0d4ac9"
 
   # 主页配置
   [params.home]
@@ -241,7 +256,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Strava = ""
     Skype = ""
     Whatsapp = ""
-    Zhihu = ""
+    Zhihu = "ai-zi-qi-49"
     Douban = ""
     Angellist = ""
     Slidershare = ""
@@ -492,7 +507,47 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # LoveIt 新增 | 0.2.0 网站分析配置
   [params.analytics]
-    enable = false
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-VQMVSVXWT2"
+      # whether to anonymize IP
+      # 是否匿名化用户 IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      # 自行托管追踪器时的主机路径
+      server = ""
+    # Plausible Analytics
+    [params.analytics.plausible]
+      dataDomain = ""
+    # Yandex Metrica
+    [params.analytics.yandexMetrica]
+      id = ""
+
+  # 添加不蒜子计数
+  [params.busuanzi]
+    enable = true
+    # 是否开启全站独立访客数
+    site_uv = true
+    # 全站独立访客数前的图标或提示语
+    site_uv_pre = '<i class="fa fa-user"></i>' 
+    # 全站独立访客数后的图标或提示语
+    site_uv_post = ''
+    # 是否开启全站浏览量
+    site_pv = true
+    # 全站浏览量前的图标或提示语
+    site_pv_pre = '<i class="fa fa-eye"></i>'
+    # 全站浏览量后的图标或提示语
+    site_pv_post = ''
+    # 是否开启单页浏览量
+    page_pv = true
+    # 单页浏览量前的图标或提示语
+    page_pv_pre = '<i class="far fa-eye fa-fw"></i>'
+    # 单页浏览量后的图标或提示语
+    page_pv_post = ''
 
 [outputs]
   home = ["HTML", "RSS", "Algolia"]
@@ -502,8 +557,3 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   isPlainText = true
   mediaType = "application/json"
   notAlternative = true
-
-[params.algolia]
-  appId = "7XNGIEBMFW"
-  indexName = "myblog"
-  searchOnlyKey = "0dc9478a52c54ac60601374f3e0d4ac9"

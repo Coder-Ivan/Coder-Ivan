@@ -1,6 +1,8 @@
 +++
 title = "个人介绍"
 date = "2023-07-14"
+hiddenFromHomePage = true
+hiddenFromSearch = true
 +++
 
 ## 技术栈
