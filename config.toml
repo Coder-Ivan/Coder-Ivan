@@ -198,7 +198,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "https://github.com/Coder-Ivan"
+    GitHub = "Coder-Ivan"
     Linkedin = ""
     Twitter = ""
     Instagram = ""
@@ -218,7 +218,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     FreeCodeCamp = ""
     Bitbucket = ""
     Stackoverflow = ""
-    Weibo = "https://weibo.com/u/5729139436"
+    Weibo = "u/5729139436"
     Odnoklassniki = ""
     VK = ""
     Flickr = ""
